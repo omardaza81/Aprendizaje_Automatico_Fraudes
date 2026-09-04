@@ -1,0 +1,48 @@
+# ============================================================================
+# Actividad 1 - Aprendizaje Automatico (UNIR)
+# Deteccion de fraude con tarjetas de credito
+#
+# Instalacion:
+#   python -m venv .venv
+#   .venv\Scripts\activate        (Windows)
+#   source .venv/bin/activate     (macOS / Linux)
+#   pip install -r requirements.txt
+# ============================================================================
+
+# --- Manipulacion y analisis de datos ---
+pandas>=2.2,<4.0
+numpy>=1.26,<3.0
+
+# --- Visualizacion ---
+matplotlib>=3.8
+seaborn>=0.13
+
+# --- Aprendizaje automatico ---
+scikit-learn>=1.4,<2.0
+
+# --- Interpretabilidad (XAI) ---
+shap>=0.44
+
+# --- Serializacion de modelos (MLOps) ---
+joblib>=1.3
+
+# --- Entorno de ejecucion del notebook ---
+ipykernel>=6.29
+notebook>=7.0
+
+# ============================================================================
+# NOTA SOBRE BOOSTING
+# ----------------------------------------------------------------------------
+# El notebook utiliza las implementaciones de gradient boosting incluidas en
+# scikit-learn (HistGradientBoostingClassifier y GradientBoostingClassifier),
+# por lo que NO requiere bibliotecas externas con dependencias nativas.
+#
+# Si se desea reproducir la seccion 15 con XGBoost o LightGBM, descomentar:
+#
+# xgboost>=2.0
+# lightgbm>=4.3
+#
+# Advertencia: en equipos con Windows Defender Application Control o Smart App
+# Control activos, la carga de las DLL nativas de estas bibliotecas puede ser
+# bloqueada ([WinError 4551]).
+# ============================================================================
